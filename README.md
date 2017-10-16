@@ -1,4 +1,1 @@
-"# note" 
-# note
-�ҵ�note
-我爱我
+git安装
