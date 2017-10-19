@@ -11,21 +11,27 @@ Java的的回调函数：
     代码：
         // 回调接口
         public interface CallBack {
-        // 回调方法 
-            public void backResult(String result);}
-        //该类用来模拟总经理
+       	    	// 回调方法 
+            	public void backResult(String result);
+	}
+       
+       //该类用来模拟总经理
         public class Manager implements CallBack {
         	//传入一个员工类的对象
             	public Manager(Personnel personnel) {
           	  // 想让该让员工做什么 
-         	  personnel.doSomething(this, "整理公司文件");}
-         //当员工做完总经理让他做的事后就通过该方法通知总经理 
+         	  personnel.doSomething(this, "整理公司文件");
+		 }
+	}
+        
+	//当员工做完总经理让他做的事后就通过该方法通知总经理 
 	 //事情结果
 	 public void backResult(String result) { 
 	 	 System.out.println("事情" + result);
 		 }
 	  }
-	  //该类用来模拟员工 
+	
+	//该类用来模拟员工 
 	  public class Personnel {
 	  	public void doSomething(CallBack callBack, String task) {
 		// 总经理通过doSomething方法告诉员工要做什么 
@@ -35,7 +41,8 @@ Java的的回调函数：
 		callBack.backResult(result);
 	        }
 	  }
-	  //测试方法
+	
+	//测试方法
 	  public class Main {
 	  	public static void main(String[] args) {
 			// 首先我们需要一个员工 
