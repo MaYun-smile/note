@@ -9,7 +9,7 @@ Servlet是java语言边写应用到Web服务器端的扩展技术，可以方便
     Tomcat 是Web应用服务器,是一个Servlet/JSP容器. 
     Tomcat 作为Servlet容器,负责处理客户请求,把请求传送给Servlet,并将Servlet的响应传送回给客户
     
-  ![image](C:https://github.com//MemoryMayun//简单理解javaServlet//Users//Administrator//Pictures//捕获.jpg)
+  ![image](https://github.com/MemoryMayun/简单理解javaServlet/Users/Administrator/Pictures/捕获.jpg)
     
     1：Tomcat将http请求文本接收并解析，然后封装成HttpServletRequest类型的request对象，所有的HTTP头数据读可以通过request对象调用对应的方法查询到。
     2：Tomcat同时会要响应的信息封装为HttpServletResponse类型的response对象，通过设置response属性就可以控制要输出到浏览器的内容，然后将response交给tomcat，tomcat就会将其变成响应文本的格式发送给浏览器
