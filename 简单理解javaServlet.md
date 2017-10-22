@@ -48,8 +48,10 @@ Servlet是java语言边写应用到Web服务器端的扩展技术，可以方便
 		<url-pattern>/MyServleet</url-pattern>
 	</servlet-mapping>
 ```
-3、按照步骤，首先浏览器通过http://localhost:8080/ServletTest/MyServlet来找到web.xml中的url-pattern，这就是第一步，匹配到了url-pattern后，就会找到第二步servlet的名字MyServlet，知道了名字，就可以通过servlet-name找到第三步，到了第三步，也就能够知道servlet的位置了。然后到其中找到对应的处理方式进行处理。
-
+3、按照步骤，首先浏览器通过http://localhost:8080/ServletTest/MyServlet来找到web.xml中的url-
+pattern，这就是第一步，匹配到了url-pattern后，就会找到第二步servlet的名字MyServlet，知道了名字
+，就可以通过servlet-name找到第三步，到了第三步，也就能够知道servlet的位置了。然后到其中找到对
+应的处理方式进行处理
 Java Servlet API 是Servlet容器(tomcat)和servlet之间的接口，它定义了serlvet的各种方法，还定义了Servlet容器传送给Servlet的对象类，其中最重要的就是ServletRequest和ServletResponse。所以说我们在编写servlet时，需要实现Servlet接口，按照其规范进行操作。
 
 
