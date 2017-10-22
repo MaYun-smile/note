@@ -46,8 +46,8 @@ interface C extends A,B{//使用的是extends
     已知每种交通工具的参数都是3个整数A、B、C的表达式。
     现有两种工具：Car 和Plane，其中Car 的速度运算公式为：A*B/C，
                   Plane的速度运算公式为：A+B+C。
-                  需要编写三类：ComputeTime.java,Plane.java,Car.java和接口Common.java，要求在未来如果增加第3种交通工具的时候
-		  ，不必修改以前的任何程序，
+                  需要编写三类：ComputeTime.java,Plane.java,Car.java和接口Common.java，要求在未来如果增加第3种交通工具的时
+		  候，不必修改以前的任何程序，
                   只需要编写新的交通工具的程序。其运行过程如下，
                   从命令行输入ComputeTime的四个参数，第一个是交通工具的类型，第二、三、四个参数分别时整数A、B、C，
                   举例：
