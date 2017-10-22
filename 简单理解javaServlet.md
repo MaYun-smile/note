@@ -94,11 +94,17 @@ GenericServlet的继承结构，实现了Servlet接口和ServletConfig接口
     public abstract class GenericServlet implements Servlet, ServletConfig,   
    ``` 
 ######    Servlet接口
-public void init(ServletConfig config);				
+public void init(ServletConfig config);	
+
 	public void service(ServletRequest request,ServletResponse Response);
+	
 	public void destroy();
-	public ServletConfig getServletConfig();
+	
+public ServletConfig getServletConfig();	
+
 	public String getServletInfo();
+	
+	
 
 Servlet中，主要的方法是service(),当客户端请求到来时，Servlet容器讲调用Servlet实例的service()方法对请求进行处理。
 
