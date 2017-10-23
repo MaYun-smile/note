@@ -22,11 +22,13 @@ Servlet是java语言边写应用到Web服务器端的扩展技术，可以方便
     public class TestServlet extends HttpServlet {
 
 	//处理HTTP GET请求
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
+		IOException {
 	    System.out.printin("get");
 	}
 	//处理HTTP POST请求
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
+		IOException {
 		System.out.printin("post");
 	}
 ```	
@@ -66,18 +68,22 @@ Java Servlet API 是Servlet容器(tomcat)和servlet之间的接口，它定义�
         public void init(ServletConfig config) throws ServletException {
     	}
 	//处理业务逻辑
-    	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException,
+		IOException {
     	}
 	//处理HTTP GET请求
-    	protected void doGet(HttpServletRequest request, HttpServletResponse     response) throws ServletException, IOException {
+    	protected void doGet(HttpServletRequest request, HttpServletResponse     response) throws ServletException,
+		IOException {
     	}
 	//处理HTTP POST请求
-    	protected void doPost(HttpServletRequest request, HttpServletResponse     response) throws ServletException, IOException {
+    	protected void doPost(HttpServletRequest request, HttpServletResponse     response) throws ServletException, 
+		IOException {
     		//一些业务get的是完不成，例如表单的提交用post，这样方便处理请求，不需要在post和get来回写很多代码。
     				doGet(request, response);
 	}
 	//处理HTTP Delete请求
-    	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, 
+		IOException {
     	}
 	//销毁方法
     	public void destroy() {
@@ -97,8 +103,8 @@ GenericServlet的继承结构，实现了Servlet接口和ServletConfig接口
    ``` 
 ######    Servlet接口
     public void init(ServletConfig config);	
-	public void service(ServletRequest request,ServletResponse Response);
-	public void destroy();
+    public void service(ServletRequest request,ServletResponse Response);
+    public void destroy();
     public ServletConfig getServletConfig();	
     public String getServletInfo();
 Servlet中，主要的方法是service(),当客户端请求到来时，Servlet容器讲调用Servlet实例的service()方法对请求进行处理。
