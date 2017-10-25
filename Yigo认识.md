@@ -107,9 +107,12 @@
 7.在页面点击按钮，测试是否完成需求
     输出台页面显示sql语句，代表成功，在打开mysql看数据是都有值
 ```
-    select DelegateID from WF_Delegate where Enable=1  and AlwaysValid=0 and EndTime<?  and AutoRetreat=1#0:2017-10-25 15:16:03.755;
+    select DelegateID from WF_Delegate where Enable=1  and AlwaysValid=0 and EndTime<?  and
+    AutoRetreat=1#0:2017-10-25 15:16:03.755;
     select OID from register where username=?#0:bbb;
-    select DelegateID from WF_Delegate where Enable=1  and AlwaysValid=0 and EndTime<?  and AutoRetreat=1#0:2017-10-25 15:17:03.756;
-    select DelegateID from WF_Delegate where Enable=1  and AlwaysValid=0 and EndTime<?  and AutoRetreat=1#0:2017-10-25 15:19:03.763;
+    select DelegateID from WF_Delegate where Enable=1  and AlwaysValid=0 and EndTime<?  and 
+    AutoRetreat=1#0:2017-10-25 15:17:03.756;
+    select DelegateID from WF_Delegate where Enable=1  and AlwaysValid=0 and EndTime<?  and 
+    AutoRetreat=1#0:2017-10-25 15:19:03.763;
 ```
 8.总结：还需要学习，我只是实现了一个微小的功能，简单的理解了一下逻辑
