@@ -91,8 +91,8 @@
     ```
 ##### 四.发送模板信息方法
 ```
-    private final static String SEND_TEMPLAYE_MESSAGE_URL = "https://api.weixin.qq.com/cgi-bin/message/template/send?
-    access_token=ACCESS_TOKEN";  
+    private final static String SEND_TEMPLAYE_MESSAGE_URL = "https://api.weixin.qq.com/cgi-bin/message/template/send
+    ?access_token=ACCESS_TOKEN";  
 	public static void sendTemplateMessage(String accessToken, WechatTemplate wechatTemplate) {      
 	    String jsonString = new Gson().toJson(wechatTemplate).toString();     
 	    String requestUrl = SEND_TEMPLAYE_MESSAGE_URL.replace("ACCESS_TOKEN", accessToken);   
